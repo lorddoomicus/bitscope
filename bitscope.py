@@ -51,13 +51,13 @@ class dso_data:
 
 			for row in reader:
 				if int( row[2] ) == dso_data.channel0:
-					self.rate0 = int ( row[7] )
-					self.count0 = int( row[8] )
+					self.rate0 = float( row[7] )
+					self.count0 = float( row[8] )
 					self.data0.extend( [ float( x ) for x in row[9:len(row)] ])
 					
-				if int( row[2] ) == self.channel1:
-					self.rate1 = int ( row[7] )
-					self.count1 = int( row[8] )
+				if int( row[2] ) == dso_data.channel1:
+					self.rate1 = float( row[7] )
+					self.count1 = float( row[8] )
 					self.data1.extend( [ float( x ) for x in row[9:len(row)] ])
 
 		self.sig0 = np.array( self.data0 )

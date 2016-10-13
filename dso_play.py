@@ -19,7 +19,7 @@
 # This is licensed for use under the GNU General Pulbic License v2
 #
 # 2016-10-11	DW2	Initial Version
-# 2016-10-12	DW2	Initial release
+# 2016-10-12	DW2	Initial release and cleaned up code a bit
 #
 
 import getopt, sys, time
@@ -64,7 +64,6 @@ if channel > 1 or channel < 0:
 
 dso = bs( file )
 
-# data = dso.data( channel )
 rate = dso.rate( channel )
 sig = dso.sig( channel )
 
@@ -81,9 +80,9 @@ samples = np.array( temp, np.int16 )
 
 # set up the mixer and sndarray and play the sound
 
-pg.mixer.init(rate, size=-16, channels=1, buffer=4096)
-noise = pg.sndarray.make_sound( samples )
+pg.mixer.init( int( rate ), size=-16, channels=1, buffer=4096)
+sound = pg.sndarray.make_sound( samples )
 
-noise.play()
+sound.play()
 
 time.sleep( len(samples) / rate )	# gotta give it time to play!!
