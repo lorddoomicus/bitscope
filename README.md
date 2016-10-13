@@ -7,7 +7,10 @@ More information can be found at this blog post:
 
 http://www.doomd.net/2016/10/the-bitscope-linux-and-python.html
 
+__NOTE__: the AWK scripts must be run with gawk.  The Python scrips all require numpy, some may also require pygame and/or matplotlib.
+
 ## What's Here
+
 
 - dso.awk
 	- pretty much a proof of concept just to work out parsing the CSV files from the DSO program.
