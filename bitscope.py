@@ -70,7 +70,7 @@ class dso_data:
 			return self.data0
 
 		elif ( channel == 1 ):
-			return self.data0
+			return self.data1
 
 		else:
 			return None
