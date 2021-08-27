@@ -82,8 +82,11 @@ plt.subplot( 211 )
 plt.xlabel( "Time (sec)" )
 plt.ylabel( "Voltage" )
 plt.title( "Original Signal" )
-plt.plot( time, dso.data0 )
- 
+if channel == 0:
+	plt.plot( time, dso.data0 )
+else:
+	plt.plot( time, dso.data1 )
+
 plt.subplot( 212 )
 plt.xlabel( "Frequency (Hz) " )
 plt.ylabel( "Magnitude" )
