@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!env python
 #
 # dso_fft.py: 
 # (c) 2016 Derrik Walker v2.0

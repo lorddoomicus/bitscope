@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!env python
 #
 # dso_test.py: 
 # (c) 2016 Derrik Walker v2.0
