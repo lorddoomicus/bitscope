@@ -5,7 +5,7 @@ data files "recorded" from the Bitscope DSO program.
 
 More information can be found at this blog post:
 
-http://www.doomd.net/2016/10/the-bitscope-linux-and-python.html
+https://www.doomd.net/the-bitscope-linux-and-python.html
 
 __NOTE__: the AWK scripts must be run with gawk.  The Python scrips all require numpy, some may also require pygame and/or matplotlib.
 
